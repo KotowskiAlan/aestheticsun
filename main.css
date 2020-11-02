@@ -1,0 +1,595 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+     
+}
+
+
+
+body
+{
+    background-color: black;
+ 
+}
+
+#scena
+{
+    position: relative;
+    perspective: 10px;
+   
+   
+}
+
+
+
+#sun
+{
+    position: absolute;
+    background: rgb(255,74,255);
+background: linear-gradient(0deg, rgba(255,74,255,1) 0%, rgba(255,80,151,1) 100%);
+    border: 1px solid transparent;
+    border-radius: 360px;
+    padding: 250px;
+    display: block;
+    top: 3%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 10%);
+    
+}
+
+#sun:hover
+{
+    animation: shining 2s infinite alternate;
+}
+
+@keyframes shining
+{
+    from
+    {
+        -webkit-box-shadow: 2px 2px 91px 5px rgba(255,74,255,1);
+-moz-box-shadow: 2px 2px 91px 5px rgba(255,74,255,1);
+box-shadow: 2px 2px 91px 5px rgba(255,74,255,1); 
+    }
+    to
+    {
+        -webkit-box-shadow: 2px 2px 91px 25px rgba(255,74,255,1);
+-moz-box-shadow: 2px 2px 91px 25px rgba(255,74,255,1);
+box-shadow: 2px 2px 91px 25px rgba(255,74,255,1); 
+    }
+}
+
+#sun3 a:link
+{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 250px;
+}
+
+#sun2
+{
+    position: absolute;
+    border: 1px solid transparent;
+    border-radius: 360px;
+    padding: 250px;
+    display: block;
+    top: 3%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 10%);
+    z-index: 2;
+    -webkit-box-shadow: 2px 2px 91px 25px rgba(255,74,255,1);
+-moz-box-shadow: 2px 2px 91px 25px rgba(255,74,255,1);
+box-shadow: 2px 2px 91px 25px rgba(255,74,255,1); 
+}
+
+
+
+#sun2:hover
+{
+    animation: shining2 2s infinite alternate;
+}
+
+@keyframes shining2
+{
+    from
+    {
+        -webkit-box-shadow: 2px 2px 91px 5px rgba(255,74,255,1);
+-moz-box-shadow: 2px 2px 91px 5px rgba(255,74,255,1);
+box-shadow: 2px 2px 91px 5px rgba(255,74,255,1); 
+    }
+    to
+    {
+        -webkit-box-shadow: 2px 2px 91px 25px rgba(255,74,255,1);
+-moz-box-shadow: 2px 2px 91px 25px rgba(255,74,255,1);
+box-shadow: 2px 2px 91px 25px rgba(255,74,255,1); 
+    }
+}
+
+
+
+
+.lines
+{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(0%, 1000%);
+    width: 100%;
+    height: 35px;
+    background: black;
+}
+
+
+.liness
+{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(0%, 1500%);
+    width: 100%;
+    height: 35px;
+    background: black;
+}
+
+.liness:before
+{
+   position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 800%); 
+
+}
+
+#sun2:hover ~ .liness
+{
+    animation: paskis 2s infinite linear;
+}
+
+@keyframes paskis
+{
+    from
+    {
+      transform: translateY(550px) scaleY(1);
+    }
+   
+    to
+    {
+        transform: translateY(500px) scaleY(1);
+        
+    }
+}
+
+
+/* koiec line */
+
+.lines0
+{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(0%, 1500%);
+    width: 100%;
+    height: 35px;
+    background: black;
+}
+
+.lines0:before
+{
+   position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 800%); 
+
+}
+
+#sun2:hover ~ .lines0
+{
+    animation: paski0 2s infinite linear;
+}
+
+@keyframes paski0
+{
+    from
+    {
+      transform: translateY(500px) scaleY(1);
+    }
+   
+    to
+    {
+        transform: translateY(450px) scaleY(0.9);
+        
+    }
+}
+
+/* koniec 0 */
+
+
+
+.lines1
+{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(0%, 1500%);
+    width: 100%;
+    height: 35px;
+    background: black;
+}
+
+.lines1:before
+{
+   position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 800%); 
+
+}
+
+#sun2:hover ~ .lines1
+{
+    animation: paski 2s infinite linear;
+}
+
+@keyframes paski
+{
+    from
+    {
+       transform: translateY(450px) scaleY(0.9);
+    }
+   
+    to
+    {
+        transform: translateY(400px) scaleY(0.8);
+        
+    }
+}
+
+
+/* koniec 1 */
+
+.lines2
+{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(0%, 1500%);
+    width: 100%;
+    height: 35px;
+    background: black;
+}
+
+.lines2:before
+{
+   position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 800%); 
+
+}
+
+#sun2:hover ~ .lines2
+{
+    animation: paski2 2s infinite linear;
+}
+
+@keyframes paski2
+{
+    from
+    {
+      transform: translateY(400px) scaleY(0.8);
+    }
+   
+    to
+    {
+        transform: translateY(350px) scaleY(0.7);
+        
+    }
+}
+
+/* koniec 2 */
+
+
+.lines3
+{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(0%, 1500%);
+    width: 100%;
+    height: 35px;
+    background: black;
+}
+
+.lines3:before
+{
+   position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 800%); 
+
+}
+
+#sun2:hover ~ .lines3
+{
+    animation: paski3 2s infinite linear;
+}
+
+@keyframes paski3
+{
+    from
+    {
+      transform: translateY(350px) scaleY(0.7);
+    }
+   
+    to
+    {
+        transform: translateY(300px) scaleY(0.5);
+        
+    }
+}
+
+/* koniec 3 */
+
+.lines4
+{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(0%, 1500%);
+    width: 100%;
+    height: 35px;
+    background: black;
+}
+
+.lines4:before
+{
+   position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 800%); 
+
+}
+
+#sun2:hover ~ .lines4
+{
+    animation: paski4 2s infinite linear;
+}
+
+@keyframes paski4
+{
+    from
+    {
+      transform: translateY(300px) scaleY(0.5);
+    }
+   
+    to
+    {
+        transform: translateY(250px) scaleY(0.3);
+        
+    }
+}
+
+/* koniec 4 */
+
+
+.lines5
+{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(0%, 1500%);
+    width: 100%;
+    height: 35px;
+    background: black;
+}
+
+.lines5:before
+{
+   position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 800%); 
+
+}
+
+#sun2:hover ~ .lines5
+{
+    animation: paski5 2s infinite linear;
+}
+
+@keyframes paski5
+{
+    from
+    {
+      transform: translateY(250px) scaleY(0.3);
+    }
+   
+    to
+    {
+        transform: translateY(200px) scaleY(0.1);
+        
+    }
+}
+
+/* koniec 5 */
+
+
+.lines6
+{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(0%, 1500%);
+    width: 100%;
+    height: 35px;
+    background: black;
+}
+
+.lines6:before
+{
+   position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 800%); 
+
+}
+
+#sun2:hover ~ .lines6
+{
+    animation: paski6 2s infinite linear;
+}
+
+@keyframes paski6
+{
+    from
+    {
+      transform: translateY(200px) scaleY(0.1);
+    }
+   
+    to
+    {
+        transform: translateY(150px) scaleY(0);
+        
+    }
+}
+
+/* koniec6 */
+
+
+.lines6
+{
+    transform: translateY(200px) scaleY(0.1);
+    opacity: 0.8;
+}
+
+.lines5
+{
+    transform: translateY(250px) scaleY(0.3);
+     opacity: 0.8;
+}
+.lines4
+{
+    transform: translateY(300px) scaleY(0.5);
+     opacity: 0.8;
+}
+.lines3
+{
+    transform: translateY(350px) scaleY(0.7);
+     opacity: 0.8;
+}
+.lines2
+{
+    transform: translateY(400px) scaleY(0.8);
+     opacity: 0.8;
+}
+.lines1
+{
+    transform: translateY(450px) scaleY(0.9);
+     opacity: 0.8;
+}
+.lines0
+{
+    transform: translateY(500px) scaleY(1);
+     opacity: 0.8;
+}
+.liness
+{
+    transform: translateY(550px) scaleY(1);
+     opacity: 0.8;
+}
+
+
+
+#recktangle
+{
+     position: relative;
+    height: 100%;
+    width: 100%;
+    background: black;
+    top: 80px;
+    transform: translate(0%, 50%);
+     -webkit-box-shadow: 2px 2px 91px 25px rgba(255,74,255,1);
+-moz-box-shadow: 2px 2px 91px 25px rgba(255,74,255,1);
+box-shadow: 2px 2px 91px 25px rgba(255,74,255,1);
+    z-index: 2;
+}
+
+
+
+
+h1
+{
+    color: white;
+    position: absolute;
+    top: 450px;
+    left: 50%;
+    font-size: 80px;
+    font-family: 'Alata', sans-serif;
+    margin: 0px 10px;
+      z-index: 10;
+}
+
+
+
+
+h2
+{
+    
+    position: absolute;
+    top: 600px;
+    right: 10%;
+    max-width: 60%;
+    transform: translate(-50%,-50px);
+    font-size: 20px;
+    font-family: 'Alata', sans-serif;
+    color: #ff779b;
+    opacity: 0.8;
+  background: black;
+    z-index: 10;
+    animation: inc 4s infinite alternate;    
+    text-justify: center;
+}
+
+@keyframes inc
+{
+    from
+    {
+            transform: scale(1);
+    }
+    to
+    {
+        transform: scale(.9);
+    }
+}
+
+h1::selection
+{
+    background: rgb(255,74,255);
+
+    color: black;
+}
+h2::selection
+{
+    background: rgb(255,150,255);
+
+    color: white;
+}
+
+a
+{
+    color: black;
+    padding: 0px 5px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background: rgb(255,74,255, .6);
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: rgb(255,74,255, .6);
+    background: transparent;
+}
